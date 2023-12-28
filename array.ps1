@@ -26,5 +26,7 @@ $myArrayList.AddRange(@("test4","test5","test6"))
 
 $myArrayList
 [int]$remove = Read-Host "remove object from an array using index:"
-$myArrayList.Removeat($remove)
+# $myArrayList.Remove() || remove specific object in a array
+$myArrayList.Removeat($remove) # remove an object using index
 $myArrayList
+# $myArrayList.RemoveRange(0,2) || remove an object using index range
